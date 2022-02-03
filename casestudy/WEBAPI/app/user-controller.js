@@ -10,7 +10,6 @@ exports.findAll=(req,resp)=>{
         .send({message:err.message || `Something went wrong`})
     })
 };
-
 //Get user by email ID for login
 exports.findOne = (req, resp) => {
     const email = req.params.email;

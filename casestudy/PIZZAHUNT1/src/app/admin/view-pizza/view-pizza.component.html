@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
@@ -23,7 +23,6 @@
         <th scope="col">Pizza Image</th>
         <th scope="col">Pizza Name</th>
         <th scope="col">Pizza Price</th>
-        <th scope="col">Update</th>
         <th scope="col">Delete</th>
       </tr>
     </thead>
@@ -37,17 +36,11 @@
         <td>{{product.productSize}}</td>
 
         <td>
-          <!-- <button class="btn btn-link" class="btn btn-success btn-sm rounded-0"  (click)="viewProductById(product.id)"> -->
-           <a routerLink="/edit">
-            <i class="fa fa-edit btn-success btn-sm rounded-0" aria-hidden="true"></i></a>
+          <button class="btn btn-link" class="btn btn-danger" data-toggle="tooltip" title="Delete" (click)="deleteProduct(product)">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
         </td>
-        <td>
-          <!-- <button class="btn btn-link" class="btn btn-danger btn-sm rounded-0" (click)="deleteProduct(product)"> -->
-            <a routerLink="/edit/{{product.id}}">
-              <!-- alert({{product.id}}) -->
-            <i class="fa fa-trash" aria-hidden="true"></i></a>
-          <!-- </button> -->
-        </td>
+
       </tr>
     </tbody>
   </table>

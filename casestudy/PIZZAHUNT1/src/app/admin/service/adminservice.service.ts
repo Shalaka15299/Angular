@@ -19,43 +19,32 @@ export class AdminserviceService {
   constructor(private httpclient:HttpClient) { }
 
    getUsers(){
-    return this.httpclient.get<any>("http://localhost:3000/app/users/")
+    return this.httpclient.get<any>(this.base_url+"/app/users/")
     .pipe(map((res:any)=>{return res;}))
   }
 
   getProducts(){
-    return this.httpclient.get<any>("http://localhost:3000/app/products/")
+    return this.httpclient.get<any>(this.base_url+"/app/products/")
     .pipe(map((res:any)=>{return res;}))
   }
 
   getProductById(id:string){
-    return this.httpclient.get<any>("http://localhost:3000/app/products/"+id)
+    return this.httpclient.get<any>(this.base_url+"/app/products/"+id)
     .pipe(map((res:any)=>{return res;}))
   }
 
   saveProduct(data:any){
-    console.log("data:"+data);
-   return this.httpclient.post("http://localhost:3000/app/products/add",data);
+    // console.log("data:"+data);
+   return this.httpclient.post(this.base_url+"/app/products/add",data);
   }
 
   deleteProduct(id:string){
-    return this.httpclient.delete<any>("http://localhost:3000/app/products/delete/"+id)
+    return this.httpclient.delete<any>(this.base_url+"/app/products/delete/"+id)
     .pipe(map((res:any)=>{return res;}))
   }
 
-  // getUsers():Observable<IUser []>{
-  //   return this.httpclient.get<IUser[]>(this.base_url+"/viewuser");
-  // }
-  // viewUser(id:string):Observable<IUser []>{
-  //   return this.httpclient.get<IUser[]>(this.base_url + "/users" +id);
-  // }
-
-  // deleteUser(id:string):Observable<IUser []>{
-  //   return this.httpclient.delete<IUser[]>(this.base_url + "/deleteuser:" +id);
-  // }
-  // check(){
-  //   return this.httpclient.get(this.base_url +"/check",{ headers:this.headers});
-  // }
-
+  login(data: any):Observable<any>{
+    return this.httpclient.get(this.base_url+"/app/logins");
+  }
 
 }

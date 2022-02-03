@@ -24,5 +24,14 @@ module.exports=(app)=>{
     ROUTER.put('/products/update/:id',productController.updateProduct);
     ROUTER.delete('/products/delete/:id',productController.deleteProduct);
 
+    const AdminController=require('./login-controller');
+
+    ROUTER.get('/logins',AdminController.findAll);
+    ROUTER.get('/Logins/:id',AdminController.findByPk);
+    ROUTER.post('/Logins/add',AdminController.createLogin);
+    ROUTER.put('/Logins/update/:id',AdminController.updateLogin);
+    ROUTER.delete('/Logins/delete/:id',AdminController.delete);
+
+    
     app.use('/app',ROUTER);
 };

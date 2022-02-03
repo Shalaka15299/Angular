@@ -24,22 +24,22 @@ exports.findByPk=(req,resp)=>{
 
 // //3. insert
 exports.createProduct=(req,resp)=>{
-    if(!req.body.productName){
-        resp.status(400)
-        .send({message:"Product name must be provided"});
-    }
-    if(!req.body.productSize){
-        resp.status(500)
-        .send({message:"Product size must be provided"});
-    }
-    if(!req.body.productPrice){
-        resp.status(400)
-        .send({message:"Product Price must be provided"});
-    }
-    if(!req.body.productImage){
-        resp.status(500)
-        .send({message:"Product Image must be provided"});
-    }
+    // if(!req.body.productName){
+    //     resp.status(400)
+    //     .send({message:"Product name must be provided"});
+    // }
+    // if(!req.body.productSize){
+    //     resp.status(500)
+    //     .send({message:"Product size must be provided"});
+    // }
+    // if(!req.body.productPrice){
+    //     resp.status(400)
+    //     .send({message:"Product Price must be provided"});
+    // }
+    // if(!req.body.productImage){
+    //     resp.status(500)
+    //     .send({message:"Product Image must be provided"});
+    // }
     const newProduct={
         productName:req.body.productName,
         productSize:req.body.productSize,

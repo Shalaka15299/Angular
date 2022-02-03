@@ -8,20 +8,7 @@ import { IUser } from './IUser';
   styleUrls: ['./view-user.component.css']
 })
 export class ViewUserComponent implements OnInit {
-  // users:IUser[]=[
-  //   {
-  //     id:1,
-  //     userName:'shalaka',
-  //     userEmail:'sha@gmail.com'
-  //   },
-  //   {
-  //     id:2,
-  //     userName:'Aditya',
-  //     userEmail:'adi@gmail.com'
-  //   }
-  // ];
-
-  public userList:any;
+   public userList:any;
   constructor(private adminservice:AdminserviceService) { }
 
 
@@ -31,20 +18,5 @@ export class ViewUserComponent implements OnInit {
       this.userList=res;
     })
   }
-
-  // getUsers(){
-  //   this.adminservice.getUsers().subscribe(allUsers=>this.users=allUsers);
-  // }
-
-
-  // deleteUser(users: { id: any; }){
-  //   var userid=users.id;
-  //   console.log(userid);
-  //   this.adminservice.deleteUser(userid).subscribe(data=>{
-  //     console.log(data);
-  //     //this.adminservice.msg="Successfully deleted user";
-  //   })
-  // }
-
 
 }

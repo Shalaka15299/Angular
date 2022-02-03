@@ -44,14 +44,7 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    if (this.isBlocked) {
-      this.msg = "You are blocked by Admin wait until admin unblock you!!!";
-      this.avail = true;
-      // console.log(this.msg);
-      return;
-    }
-
-       // console.log(JSON.stringify(this.loginForm.value));
+          // console.log(JSON.stringify(this.loginForm.value));
        this.authService.login(f.value.email).subscribe(
         data => {
           console.log(data);

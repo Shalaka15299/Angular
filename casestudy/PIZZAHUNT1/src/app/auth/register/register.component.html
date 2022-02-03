@@ -25,20 +25,11 @@
             <div  style="color: red;" *ngIf="avail" >
             <h3>  {{msg}}</h3>
             </div>
-            <!-- <div style="color: red;">
-              value = {{f.value | json}}
-              valid = {{f.valid}}
-            </div> -->
+
             <form #f="ngForm" (ngSubmit)="onSubmit(f)">
               <div class="input-group">
                 <input class="input--style-3" type="text" placeholder="Name" name="name" autocomplete="off" ngModel required #name="ngModel">
               </div>
-              <!-- <div style="color: red;">
-                name value = {{name.value}}
-                valid = {{name.valid}}
-                dirty = {{name.dirty}}
-                touched = {{name.touched}}
-              </div> -->
 
               <div class="input-group">
                 <input class="input--style-3" type="email" placeholder="Email" name="email" autocomplete="off" ngModel email
@@ -53,12 +44,6 @@
                   autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                   title="Plaese enter valid and strong password" ngModel required #p1="ngModel">
               </div>
-              <!-- <div id="message">
-                <p id="letter" class="invalid">A lowercase letter</p>
-                <p id="capital" class="invalid">A capital (uppercase) letter</p>
-                <p id="number" class="invalid">A number</p>
-                <p id="length" class="invalid">Minimum 8 characters</p>
-              </div> -->
 
               <div class="input-group">
                 <input class="input--style-3" type="password" placeholder="Re-enter password" name="p2" id="p2"

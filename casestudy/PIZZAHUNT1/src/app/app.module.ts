@@ -11,24 +11,24 @@ import { ResetPasswordComponent } from './auth/reset-password/reset-password.com
 import { AdminHeaderComponent } from './admin/admin-header/admin-header.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { AddPizzaComponent } from './admin/add-pizza/add-pizza.component';
-import { EditPizzaComponent } from './admin/edit-pizza/edit-pizza.component';
 import { ViewPizzaComponent } from './admin/view-pizza/view-pizza.component';
 import { ViewUserComponent } from './admin/view-user/view-user.component';
-import { SearchUserComponent } from './admin/search-user/search-user.component';
-import { SearchOrderComponent } from './admin/search-order/search-order.component';
-// import { ViewFeedbackComponent } from './admin/view-feedback/view-feedback.component';
 import { CartComponent } from './user/cart/cart.component';
-import { ChangepasswordComponent } from './user/changepassword/changepassword.component';
-import { EditprofileComponent } from './user/editprofile/editprofile.component';
 import { EmptyprofileComponent } from './user/emptyprofile/emptyprofile.component';
 import { EmptycartComponent } from './user/emptycart/emptycart.component';
 import { GlowComponent } from './user/glow/glow.component';
-import { MyprofileComponent } from './user/myprofile/myprofile.component';
 import { AdminserviceService } from './admin/service/adminservice.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserhomeComponent } from './user/userhome/userhome.component';
 import { NavbarComponent } from './user/navbar/navbar.component';
+import { FamousComponent } from './ind/famous/famous.component';
+import { HeaderComponent } from './ind/header/header.component';
+import { MainComponent } from './ind/main/main.component';
+import { OfferComponent } from './ind/offer/offer.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './ind/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -40,21 +40,20 @@ import { NavbarComponent } from './user/navbar/navbar.component';
       AdminHeaderComponent,
     AdminHomeComponent,
     AddPizzaComponent,
-    EditPizzaComponent,
     ViewPizzaComponent,
     ViewUserComponent,
-    SearchUserComponent,
-    SearchOrderComponent,
-
     CartComponent,
-    ChangepasswordComponent,
-    EditprofileComponent,
     EmptyprofileComponent,
     EmptycartComponent,
     GlowComponent,
-    MyprofileComponent,
     UserhomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FamousComponent,
+    HeaderComponent,
+    MainComponent,
+    OfferComponent,
+    AdminLoginComponent,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,

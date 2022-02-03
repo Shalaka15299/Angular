@@ -8,7 +8,7 @@ module.exports = {
         productName: 'peppy paneer',
         productSize: 'Big 10',
         productPrice:'515',
-        productImage:'../assets/pic/1.jpg',
+        productImage:'../assets/1.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -17,7 +17,7 @@ module.exports = {
         productName: 'Mexican green Wave',
         productSize: 'Big 10',
         productPrice:'659',
-        productImage:'../assets/pic/2.jpg',
+        productImage:'../assets/2.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -26,7 +26,7 @@ module.exports = {
         productName: 'Veg Extravaganza',
         productSize: 'Regular 7',
         productPrice:'345',
-        productImage:'../assets/pic/3.jpg',
+        productImage:'../assets/3.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -35,7 +35,7 @@ module.exports = {
         productName: 'paneer makhani',
         productSize: 'Regular 7',
         productPrice:'300',
-        productImage:'../assets/pic/4.jpg',
+        productImage:'../assets/4.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -44,7 +44,7 @@ module.exports = {
         productName: 'Margherita',
         productSize: 'Big 10',
         productPrice:'400',
-        productImage:'../assets/pic/5.jpg',
+        productImage:'../assets/5.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -53,7 +53,7 @@ module.exports = {
         productName: 'Double Cheese margherita',
         productSize: 'Regular 7',
         productPrice:'345',
-        productImage:'../assets/pic/6.jpg',
+        productImage:'../assets/6.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -62,7 +62,7 @@ module.exports = {
         productName: 'peppy paneer',
         productSize: 'Big 10',
         productPrice:'545',
-        productImage:'../assets/pic/7.jpg',
+        productImage:'../assets/7.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false
@@ -71,7 +71,7 @@ module.exports = {
         productName: 'peppy paneer',
         productSize: 'Regular 7',
         productPrice:'360',
-        productImage:'../assets/pic/8.jpg',
+        productImage:'../assets/8.jpg',
         createdAt:new Date(),
         updatedAt:new Date(),
        //isBetaMember: false

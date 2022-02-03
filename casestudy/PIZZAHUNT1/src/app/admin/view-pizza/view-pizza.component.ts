@@ -19,12 +19,7 @@ export class ViewPizzaComponent implements OnInit {
 
   }
 
-  editPizza(pizza:any){
-    this.adminService.temp=pizza;
-    this.router.navigateByUrl('/edit');
-  }
-
-  viewProduct(){
+   viewProduct(){
     this.adminService.getProducts()
     .subscribe((res:any)=>{
       this.productList=res;
@@ -42,8 +37,6 @@ export class ViewPizzaComponent implements OnInit {
         alert("Successfully deleted");
         window.location.reload();
       }
-
-      // this.router.navigate(['/viewpizza']);
     })
   }
 
@@ -56,6 +49,11 @@ export class ViewPizzaComponent implements OnInit {
       this.productList=res;
       this.router.navigateByUrl('/edit');
     })
+  }
+
+  editPizza(pizza:any){
+    this.adminService.temp=pizza;
+    this.router.navigateByUrl('/edit');
   }
 
 
